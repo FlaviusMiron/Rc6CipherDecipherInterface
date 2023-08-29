@@ -3,4 +3,4 @@ Graphical user interface for the RC6 cipher. The cipher uses a block size of 16 
 
 Show the histogram of the plain texts and cyphered message.
 
-Save the cyphered message in a text file in the same directory, in case it is too big to be displayed in the interface.
+Saves the cyphered message in a text file in the same directory, in case it is too big to be displayed in the interface.
