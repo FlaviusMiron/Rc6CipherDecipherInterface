@@ -16,7 +16,7 @@ class interface():
             
 
     def configure_interface(self):
-        self.root.title("Interfata cifrare")
+        self.root.title("Ciphring Interface")
         self.root.geometry("1400x600")
         self.message = ""
         self.key = ""
@@ -37,16 +37,16 @@ class interface():
         self.input_key_input_area = ctk.CTkEntry(self.root)
         self.input_key_input_area.place(relwidth=0.2, relheight=0.08, relx=0.22, rely=0.11)
 
-        self.cyphered_text_button = ctk.CTkButton(self.root,text="Cypher plain text",command=self.cyphered_text_button_click_event)
+        self.cyphered_text_button = ctk.CTkButton(self.root,text="Cipher plain text",command=self.cyphered_text_button_click_event)
         self.cyphered_text_button.place(relwidth=0.2, relheight=0.08, relx=0.01, rely=0.21)
 
-        self.cyphered_text_label = ctk.CTkLabel(self.root,text="Cyphered text")
+        self.cyphered_text_label = ctk.CTkLabel(self.root,text="Ciphered text")
         self.cyphered_text_label.place(relwidth=0.2, relheight=0.08, relx=0.22, rely=0.21)
 
-        self.decyphered_text_button = ctk.CTkButton(self.root,text="Decypher text",command=self.decyphered_text_button_click_event)
+        self.decyphered_text_button = ctk.CTkButton(self.root,text="Decipher text",command=self.decyphered_text_button_click_event)
         self.decyphered_text_button.place(relwidth=0.2, relheight=0.08, relx=0.01, rely=0.31)
 
-        self.decyphered_text_label = ctk.CTkLabel(self.root,text="Decyphered text")
+        self.decyphered_text_label = ctk.CTkLabel(self.root,text="Deciphered text")
         self.decyphered_text_label.place(relwidth=0.2, relheight=0.08, relx=0.22, rely=0.31)
 
         self.fig1 = Figure()
@@ -54,14 +54,14 @@ class interface():
         self.canvas1 = FigureCanvasTkAgg(self.fig1, master = self.root)
         self.canvas1.get_tk_widget().place(relwidth=0.26, relheight=0.6, relx=0.44, rely=0.01)
         self.canvas1.draw()
-        self.a.set_title("Histograma mesajului in clar")
+        self.a.set_title("Plain text histogram")
 
         self.fig2 = Figure()
         self.b = self.fig2.add_subplot(111)
         self.canvas2 = FigureCanvasTkAgg(self.fig2, master = self.root)
         self.canvas2.get_tk_widget().place(relwidth=0.26, relheight=0.6, relx=0.71, rely=0.01)
         self.canvas2.draw()
-        self.b.set_title("Histograma mesajului cifrat")
+        self.b.set_title("Ciphered message histogram")
 
  
 
@@ -196,5 +196,4 @@ class interface():
 if __name__ == "__main__":
     app = interface()
     app.root.mainloop()
-
 
