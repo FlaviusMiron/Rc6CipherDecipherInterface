@@ -5,6 +5,7 @@ Shows the histogram of the plain texts and ciphered message.
 
 Saves the ciphered message in a text file in the same directory, in case it is too big to be displayed in the interface.
 
-![image](https://github.com/FlaviusMiron/Rc6CipherDecipherInterface/assets/100422650/d8be4b24-683a-4bcf-bf94-3f26fadd5fcf)
+![image](https://github.com/FlaviusMiron/Rc6CipherDecipherInterface/assets/100422650/952bc897-b21f-4316-8d7d-45d94f9219d0)
+
 
 
